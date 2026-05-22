@@ -1,23 +1,85 @@
-body {
-  background-color: #dddddd;
+* {
+  font-family: "Fredoka", "sans-serf";
+  font-weight: 600;
+  font-size: 20px;
 }
 
-header {
-  margin-left: 50px;
+body {
+  background: #f0a url(./assets/bg.png) no-repeat fixed center;
+  background-size: cover;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
-nav {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
+
+.island {
   background-color: white;
-  text-align: center;
+  padding: 5px 20px;
+  margin: 40px;
+  border: 5px solid black;
+  border-radius: 30px;
+  box-shadow: #00000088 0px 5px 0px 0px;
 }
-nav ul {
+
+header.island {
+  margin-bottom: 0px;
   display: flex;
-  flex-flow: row;
-  flex: 1;
-  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-around;
 }
-nav ul li {
-  flex: 1;
+
+header.island div {
+  align-content: center;
+}
+
+main.island {
+  margin-top: 0px;
+}
+
+.banner {
+  background-color: orange;
+  text-align: center;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+nav {
+  background-color: #00000088;
+  padding: 10px 20px;
+  margin: 0px 100px;
+  max-height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bridge a {
+  color: white;
+}
+
+a {
+  color: #f0a;
+}
+
+a:hover {
+  color: #fa0;
+}
+
+footer p {
+  font-weight: 400;
+}
+
+.record {
+  background-color: white;
+  padding: 20px;
+  margin: 40px 20px;
+  border: 5px solid black;
+  border-radius: 30px;
 }
