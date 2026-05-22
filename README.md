@@ -1,3 +1,2 @@
 # sspeedy.github.io
-personal hobby progress tracker website
-nothing actually worth looking at atm, HEAVY wip
+hella wip persaonal website
