@@ -13,8 +13,8 @@ body {
   margin-right: auto;
 }
 
-.clear {
-  clear: both;
+.inline-block {
+  display: inline-block;
 }
 
 .island {
