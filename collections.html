@@ -7,6 +7,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
+  <script>
+    function tab2() {
+      document.getElementById("content1").style.display = "none";
+      document.getElementById("tab1").classList.remove("open");
+      document.getElementById("content2").style.display = "block";
+      document.getElementById("tab2").classList.add("open");
+    }
+    function tab1() {
+      document.getElementById("content2").style.display = "none";
+      document.getElementById("tab2").classList.remove("open");
+      document.getElementById("content1").style.display = "block";
+      document.getElementById("tab1").classList.add("open");
+    }
+  </script>
   <title>collections</title>
 </head>
 
@@ -29,38 +43,59 @@
 
   <main class="island">
     <div class="tab">
-      <button class="open" type="">vinyl records</button>
-      <button type="">instruments</button>
+      <button id="tab1" class="open" type="button" onclick="tab1()">vinyl records</button>
+      <button id="tab2" type="button" onclick="tab2()">instruments</button>
     </div>
 
-    <article class="item island">
-      <img class="island" src="./assets/checker.png">
-      <div>
-        <h3>artist - title</h3>
-        <p>blah blah blah stuff aobut the item</p>
+    <article id="content1">
+      <div class="item island">
+        <img class="island" src="./assets/checker.png">
+        <div>
+          <h3>artist - title</h3>
+          <p>test 1</p>
+        </div>
+      </div>
+
+      <div class="item island">
+        <img class="island" src="./assets/checker.png">
+        <div>
+          <h3>artist - title</h3>
+          <p>test 1</p>
+        </div>
+      </div>
+
+      <div class="item island">
+        <img class="island" src="./assets/checker.png">
+        <div>
+          <h3>artist - title</h3>
+          <p>test 1</p>
+        </div>
       </div>
     </article>
 
-    <article class="item island">
-      <img class="island" src="./assets/checker.png">
-      <div>
-        <h3>artist - title</h3>
-        <p>blah blah blah blah blah blah blah blah blah stuff aobut the item</p>
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah stuff
-          aobut the item</p>
+    <article id="content2" style="display: none;">
+      <div class="item island">
+        <img class="island" src="./assets/checker.png">
+        <div>
+          <h3>instrument</h3>
+          <p>test 2</p>
+        </div>
       </div>
-    </article>
 
-    <article class="item island">
-      <img class="island" src="./assets/checker.png">
-      <div>
-        <h3>artist - title</h3>
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah stuff
-          aobut the item</p>
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah stuff
-          aobut the item</p>
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah stuff
-          aobut the item</p>
+      <div class="item island">
+        <img class="island" src="./assets/checker.png">
+        <div>
+          <h3>instrument</h3>
+          <p>test 2</p>
+        </div>
+      </div>
+
+      <div class="item island">
+        <img class="island" src="./assets/checker.png">
+        <div>
+          <h3>instrument</h3>
+          <p>test 2</p>
+        </div>
       </div>
     </article>
   </main>
