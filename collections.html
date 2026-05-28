@@ -34,8 +34,13 @@
     </div>
 
     <article id="content1">
+      <h2>my spinny discs</h2>
+
       <div class="item island">
-        <img class="island hover-swap" src="./assets/checker.png" data-hover="./assets/checker2.png">
+        <img class="island"
+        src="./assets/checker.png"
+        onmouseover="this.src='./assets/checker2.png'"
+        onmouseleave="this.src='./assets/checker.png'">
         <div>
           <h3>artist - title</h3>
           <p>test 1</p>
@@ -43,7 +48,10 @@
       </div>
 
       <div class="item island">
-        <img class="island hover-swap" src="./assets/checker.png" data-hover="./assets/checker2.png">
+        <img class="island"
+        src="./assets/checker.png"
+        onmouseover="this.src='./assets/checker2.png'"
+        onmouseleave="this.src='./assets/checker.png'">
         <div>
           <h3>artist - title</h3>
           <p>test 1</p>
@@ -51,7 +59,10 @@
       </div>
 
       <div class="item island">
-        <img class="island hover-swap" src="./assets/checker.png" data-hover="./assets/checker2.png">
+        <img class="island"
+        src="./assets/checker.png"
+        onmouseover="this.src='./assets/checker2.png'"
+        onmouseleave="this.src='./assets/checker.png'">
         <div>
           <h3>artist - title</h3>
           <p>test 1</p>
@@ -60,8 +71,13 @@
     </article>
 
     <article id="content2" style="display: none;">
+      <h2>bro makes music lol</h2>
+
       <div class="item island">
-        <img class="island hover-swap" src="./assets/checker.png" data-hover="./assets/checker2.png">
+        <img class="island"
+        src="./assets/checker.png"
+        onmouseover="this.src='./assets/checker2.png'"
+        onmouseleave="this.src='./assets/checker.png'">
         <div>
           <h3>instrument</h3>
           <p>test 2</p>
@@ -69,7 +85,10 @@
       </div>
 
       <div class="item island">
-        <img class="island hover-swap" src="./assets/checker.png" data-hover="./assets/checker2.png">
+        <img class="island"
+        src="./assets/checker.png"
+        onmouseover="this.src='./assets/checker2.png'"
+        onmouseleave="this.src='./assets/checker.png'">
         <div>
           <h3>instrument</h3>
           <p>test 2</p>
@@ -77,7 +96,10 @@
       </div>
 
       <div class="item island">
-        <img class="island hover-swap" src="./assets/checker.png" data-hover="./assets/checker2.png">
+        <img class="island"
+        src="./assets/checker.png"
+        onmouseover="this.src='./assets/checker2.png'"
+        onmouseleave="this.src='./assets/checker.png'">
         <div>
           <h3>instrument</h3>
           <p>test 2</p>
@@ -105,33 +127,6 @@
       document.getElementById("content1").style.display = "block";
       document.getElementById("tab1").classList.add("open");
     }
-
-    // got this from https://www.html-code-generator.com/html/mouse-hover-image
-    // ----
-    // Select all images that will use hover swapping
-    const images = document.querySelectorAll(".hover-swap");
-
-    images.forEach(img => {
-      const originalSrc = img.src;
-      const hoverSrc = img.dataset.hover;
-
-      // Skip if no hover image is provided
-      if (!hoverSrc) return;
-
-      // Preload hover image for smooth swapping
-      new Image().src = hoverSrc;
-
-      // Swap image on hover
-      img.addEventListener("mouseenter", () => {
-        img.src = hoverSrc;
-      });
-
-      // Restore original image
-      img.addEventListener("mouseleave", () => {
-        img.src = originalSrc;
-      });
-    });
-    // ----
   </script>
 </body>
 
