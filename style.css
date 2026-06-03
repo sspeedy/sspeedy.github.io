@@ -82,6 +82,14 @@ nav {
     }
   }
 }
+
+.content article {
+  display: none;
+  &.open {
+    display: block;
+  }
+}
+
 .item {
   margin: 20px 0px;
 
