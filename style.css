@@ -91,6 +91,7 @@ nav {
 }
 
 .item {
+    clear: left;
   margin: 20px 0px;
 
   & > img {
