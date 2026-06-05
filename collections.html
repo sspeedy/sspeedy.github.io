@@ -27,29 +27,12 @@
     <a href="./index.html">back</a>
   </nav>
 
-  <script>
-    function switchTab(tab, content) {
-      const currentTab = document.querySelector("button.open");
-      const currentContent = document.querySelector("article.open");
-
-      const nextTab = document.getElementById(tab);
-      const nextContent = document.getElementById(content);
-
-      currentTab.classList.remove("open");
-      nextTab.classList.add("open");
-      currentContent.classList.remove("open");
-      nextContent.classList.add("open");
-    }
-  </script>
-
   <main class="island">
     <div class="tab">
       <button id="tab1" class="open" type="button" onclick="switchTab('tab1', 'content1')">vinyl</button>
       <button id="tab2" type="button" onclick="switchTab('tab2', 'content2')">instruments</button>
       <button id="tab3" type="button" onclick="switchTab('tab3', 'content3')">extra</button>
     </div>
-
-    <hr>
 
     <div class="content">
       <article id="content1" class="open">
@@ -104,6 +87,21 @@
     <h3>contact:</h3>
     <p>spe.edy on discord</p>
   </footer>
+
+  <script>
+    function switchTab(tab, content) {
+      const currentTab = document.querySelector("button.open");
+      const currentContent = document.querySelector("article.open");
+
+      const nextTab = document.getElementById(tab);
+      const nextContent = document.getElementById(content);
+
+      currentTab.classList.remove("open");
+      nextTab.classList.add("open");
+      currentContent.classList.remove("open");
+      nextContent.classList.add("open");
+    }
+  </script>
 </body>
 
 </html>

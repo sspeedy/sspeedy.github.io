@@ -13,10 +13,6 @@ body {
   margin-right: auto;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .island {
   background-color: white;
   border: 5px solid black;
